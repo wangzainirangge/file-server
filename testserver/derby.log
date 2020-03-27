@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Mar 26 23:17:02 SGT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0171-176b-0842-000003335798 
+on database directory D:\IDEA\算法\testserver\testDerby with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/E:/Maven/apache-maven-3.6.1-bin/Maven_Cang/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_181-b13
+user.dir=D:\IDEA\算法\testserver
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
