@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>文件上传页面</title>
+</head>
+<body>
+  <h1>文件上传页面</h1>
+  <div>请选择上传的文件<span style="color: red">(文件小于20MB)</span></div>
+  <br>
+  <form action="/file/uploadFile" method="post" enctype="multipart/form-data">
+    <input type="file" name="mufile"/>
+    <input type="submit" name="提交"/>
+  </form>
+  <br>
+  <div th:if="${status}">
+    <div>文件id：<span th:text="${uuid}" ></span></div>
+    <div>文件名称：<span th:text="${fileName}"></span></div>
+    <div>文件类型：<span th:text="${fileType}"></span></div>
+    <div>文件大小：<span th:text="${fileSize}"></span>字节</div>
+    <div>文件创建时间：<span th:text="${createTime}"></span></div>
+  </div>
+  <br>
+  <form action="/file/downloadFile" method="get" enctype="multipart/form-data">
+    <input type="text" name="uuid"/>
+    <input type="submit" name="下载" value="下载">(<span style="color: red">请输入文件id下载文件</span>)
+  </form>
+</body>
+</html>
